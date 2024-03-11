@@ -8,7 +8,7 @@ connectToDB();
 
 app.use(cors());
 app.use(express.json());
-app.use("/api/users", userRouter);
+app.use("/users", userRouter);
 
 app.use = (err, req, res, next) => {
   console.log(err);
