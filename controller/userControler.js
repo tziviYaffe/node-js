@@ -24,8 +24,7 @@ export const updateUser = async (req, res) => {
   let { id } = req.params;
   let { email, phone, userName } = req.body;
   let validate;
-  // if (!mongoose.isValidObjectId(id))
-  //   return res.status(400).send("invalid paramter id");
+
   try {
     let userToUpdate = await User.findById(id);
     console.log(userToUpdate);
