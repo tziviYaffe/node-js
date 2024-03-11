@@ -12,7 +12,7 @@ app.use("/api/users", userRouter);
 
 app.use = (err, req, res, next) => {
   console.log(err);
-  res.status(res.statusCode || 500).send(err.message || "התרחשה תקלה");
+  res.status(res.statusCode || 500).send(err.message || "קשה התרחשה תקלה");
 };
 
 let port = 8000;
